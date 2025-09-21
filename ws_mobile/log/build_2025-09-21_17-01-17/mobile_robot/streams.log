@@ -1,0 +1,33 @@
+[0.012s] Invoking command in '/home/dhanushya/ws_mobile/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake --build /home/dhanushya/ws_mobile/build/mobile_robot -- -j16 -l16
+[0.058s] Invoked command in '/home/dhanushya/ws_mobile/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake --build /home/dhanushya/ws_mobile/build/mobile_robot -- -j16 -l16
+[0.087s] Invoking command in '/home/dhanushya/ws_mobile/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake --install /home/dhanushya/ws_mobile/build/mobile_robot
+[0.108s] -- Install configuration: ""
+[0.108s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/launch
+[0.108s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/launch/apartment.launch.py
+[0.108s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/model
+[0.109s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/model/robot.xacro
+[0.109s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/model/gazebo_model.launch.py
+[0.109s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/parameters
+[0.109s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/parameters/bridge_parameters.yaml
+[0.109s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/gazebo_worlds
+[0.109s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/gazebo_worlds/apartment.world
+[0.109s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/scripts
+[0.109s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/scripts/tf_tree_script.py
+[0.109s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/config
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/config/robot.rviz
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/path.sh
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/path.dsv
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/local_setup.bash
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/local_setup.sh
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/local_setup.zsh
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/local_setup.dsv
+[0.110s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/package.dsv
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake
+[0.110s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake
+[0.111s] -- Up-to-date: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/package.xml
+[0.114s] Invoked command in '/home/dhanushya/ws_mobile/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake --install /home/dhanushya/ws_mobile/build/mobile_robot

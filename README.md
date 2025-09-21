@@ -189,6 +189,76 @@ This project implements a comprehensive **differential drive mobile robot simula
 ![TF_TREE5](tf_tree5.png)
 ![TF_TREE6](tf_tree6.png)
 
+# Sensor Fusion & Trajectory Tracking
+
+This package implements **sensor fusion** for a differential drive robot in ROS 2, combining **wheel encoder odometry** with a **Kalman filter** to improve trajectory estimation. The node also integrates **Gazebo ground truth** for benchmarking and generates detailed analysis plots comparing different trajectory estimation methods.
+
+---
+
+## Features
+
+- **Fused Trajectory**: Wheel encoder odometry fused using a Kalman filter.
+- **Trajectory Comparison**:
+  - Raw wheel encoder odometry
+  - Kalman-filtered fused odometry
+  - Ground-truth trajectory from Gazebo
+- **Analysis Outputs**:
+  - Trajectory plots (`wheel vs kalman vs ground truth`)
+  - Distance traveled comparison
+  - Cumulative distance over time
+  - Position vs time plots
+  - Clean navigation map overlay
+- **CSV Logging**: All trajectories (wheel, Kalman, GT) are saved in timestamped CSV files.
+
+---
+
+## Package Structure
+
+- `wheel_distance_tracker.py` → Main ROS 2 node
+- `output_dir/` → Auto-created folder with:
+  - `wheel_encoder_distance.csv`
+  - `kalman_fused_distance.csv`
+  - `ground_truth.csv`
+  - `wheel_kalman_analysis.png`
+  - `navigation_map_clean.png`
+
+---
+
+## Methodology
+
+- **Wheel Odometry**: Provides raw incremental motion estimates but accumulates drift.
+- **Kalman Filter Fusion**:
+  - State vector includes position `(x, y)`, velocity `(vx, vy)`, orientation `(θ)`, and angular velocity `(ω)`.
+  - Wheel odometry updates serve as measurements.
+  - Process & measurement noise covariance tuned for realism.
+  - Corrects drift and smooths trajectory.
+
+---
+
+## Comparison & Justification
+
+- **Wheel Encoder Only**:
+  - Simple, low-cost
+  - Accumulates drift & error over long runs
+- **Kalman Fusion**:
+  - Reduces drift, smooths trajectory
+  - Provides uncertainty estimates
+  - Better alignment with ground truth
+- **Chosen Approach**: Kalman fusion was selected because it balances **real-time performance** with **improved accuracy** in indoor navigation tasks.
+
+---
+
+## Example Output
+
+### Trajectory Comparison
+
+![Trajectory Comparison](wheel_kalman_analysis.png)
+
+### Clean Navigation Map
+
+![Clean Map](navigation_map_clean.png)
+
+---
 
 ## License
 

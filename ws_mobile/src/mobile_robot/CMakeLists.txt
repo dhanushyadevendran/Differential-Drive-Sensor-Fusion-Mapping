@@ -16,7 +16,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY launch model parameters gazebo_worlds scripts
+  DIRECTORY launch model parameters gazebo_worlds scripts config
   DESTINATION share/${PROJECT_NAME}
 )
 if(BUILD_TESTING)

@@ -49,6 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/dhanushya/ws_mobile/src/mobile_robot/parameters"
     "/home/dhanushya/ws_mobile/src/mobile_robot/gazebo_worlds"
     "/home/dhanushya/ws_mobile/src/mobile_robot/scripts"
+    "/home/dhanushya/ws_mobile/src/mobile_robot/config"
     )
 endif()
 
