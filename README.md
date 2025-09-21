@@ -43,3 +43,30 @@ Install Python dependencies:
 ```bash
 pip3 install numpy matplotlib
 ```
+## Setup Instructions
+
+To installs ROS 2 Foxy, Gazebo 11, required ROS 2 packages, and Python dependencies.  
+
+chmod +x setup.sh
+./setup.sh
+
+
+## Steps to launch simulation
+
+# Go to your workspace
+cd ~/ws_mobile
+
+# Clean previous builds (optional but recommended)
+rm -rf build/ install/ log/
+
+# Build all packages
+colcon build
+
+# Source the workspace
+source install/setup.bash
+
+## Run Wall-Following Algorithm
+cd ~/ws_mobile/wall_follower_robot/wall_follower_robot
+
+# Run the Python node
+python3 wall_following_robot.py

@@ -1,0 +1,54 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Unix Makefiles"
+		},
+		"paths" : 
+		{
+			"cmake" : "/home/dhanushya/.local/lib/python3.8/site-packages/cmake/data/bin/cmake",
+			"cpack" : "/home/dhanushya/.local/lib/python3.8/site-packages/cmake/data/bin/cpack",
+			"ctest" : "/home/dhanushya/.local/lib/python3.8/site-packages/cmake/data/bin/ctest",
+			"root" : "/home/dhanushya/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.27"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 27,
+			"patch" : 4,
+			"string" : "3.27.4",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-2d009afe85d14246ee5d.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		}
+	],
+	"reply" : 
+	{
+		"client-colcon-cmake" : 
+		{
+			"codemodel-v2" : 
+			{
+				"jsonFile" : "codemodel-v2-2d009afe85d14246ee5d.json",
+				"kind" : "codemodel",
+				"version" : 
+				{
+					"major" : 2,
+					"minor" : 6
+				}
+			}
+		}
+	}
+}
