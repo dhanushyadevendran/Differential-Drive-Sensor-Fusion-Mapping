@@ -518,12 +518,12 @@ class WheelDistanceTracker(Node):
             
             plot_file = os.path.join(self.output_dir, 'wheel_kalman_analysis.png')
             plt.savefig(plot_file, dpi=300, bbox_inches='tight')
-            self.get_logger().info(f"📊 Saved comprehensive analysis: {plot_file}")
+            self.get_logger().info(f"Saved comprehensive analysis: {plot_file}")
             
             self.create_clean_map()
             
         except Exception as e:
-            self.get_logger().error(f"❌ Error creating plots: {e}")
+            self.get_logger().error(f"Error creating plots: {e}")
 
     def create_clean_map(self):
         """Create clean trajectory map view"""
@@ -559,10 +559,10 @@ class WheelDistanceTracker(Node):
             
             map_file = os.path.join(self.output_dir, 'navigation_map_clean.png')
             plt.savefig(map_file, dpi=300, bbox_inches='tight')
-            self.get_logger().info(f"🗺️ Saved clean navigation map: {map_file}")
+            self.get_logger().info(f"Saved clean navigation map: {map_file}")
             
         except Exception as e:
-            self.get_logger().error(f"❌ Error creating clean map: {e}")
+            self.get_logger().error(f"Error creating clean map: {e}")
 
     def control_loop(self):
         self.control_count += 1
@@ -584,16 +584,13 @@ class WheelDistanceTracker(Node):
             stop_twist = Twist()
             self.cmd_vel_pub.publish(stop_twist)
             
-            self.get_logger().info("💾 Saving sensor fusion data...")
+            self.get_logger().info("Saving sensor fusion data...")
             self.save_data()
             
-            self.get_logger().info("📊 Creating analysis plots...")
+            self.get_logger().info("Creating analysis plots...")
             self.create_analysis_plots()
             
-            self.get_logger().info("📄 Generating Kalman filter report...")
-            self.generate_kalman_filter_report()
-            
-            self.get_logger().info("✅ SENSOR FUSION ANALYSIS COMPLETE!")
+            self.get_logger().info("SENSOR FUSION ANALYSIS COMPLETE!")
             return
 
         # Continue wall following
@@ -607,7 +604,7 @@ def main(args=None):
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        node.get_logger().info("🛑 Interrupted by user")
+        node.get_logger().info("Interrupted by user")
         if not node.loop_complete:
             node.save_data()
             node.create_analysis_plots()

@@ -11,13 +11,10 @@ def generate_launch_description():
     robot_name = 'differential_drive_robot'
     model_file_rel_path = 'model/robot.xacro'
 
-    # Path to Xacro
     path_model_file = os.path.join(get_package_share_directory(package_name), model_file_rel_path)
 
-    # Convert Xacro → URDF
     robot_description = xacro.process_file(path_model_file).toxml()
 
-    # Gazebo Classic launch
     gazebo_launch_file = PythonLaunchDescriptionSource(
         os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
     )
@@ -29,7 +26,6 @@ def generate_launch_description():
         }.items()
     )
 
-    # Robot State Publisher
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
@@ -37,7 +33,13 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description, 'use_sim_time': True}]
     )
 
-    # Spawn robot
+    node_joint_state_publisher = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        output='screen',
+        parameters=[{'use_sim_time': True}]
+    )
+
     spawn_model_node = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
@@ -51,8 +53,19 @@ def generate_launch_description():
         output='screen'
     )
 
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='screen',
+        arguments=['-d', os.path.join(get_package_share_directory(package_name), 'config', 'robot.rviz')],
+        parameters=[{'use_sim_time': True}]
+    )
+
     return LaunchDescription([
         gazebo_launch,
         node_robot_state_publisher,
-        spawn_model_node
+        node_joint_state_publisher,
+        spawn_model_node,
+        rviz_node
     ])

@@ -3,6 +3,8 @@
 /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/model/gazebo_model.launch.py
 /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/parameters/bridge_parameters.yaml
 /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/gazebo_worlds/apartment.world
+/home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/scripts/tf_tree_script.py
+/home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/config/robot.rviz
 /home/dhanushya/ws_mobile/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
 /home/dhanushya/ws_mobile/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
 /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh

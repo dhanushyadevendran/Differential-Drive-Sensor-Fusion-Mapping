@@ -1,0 +1,72 @@
+[0.016s] Invoking command in '/home/dhanushya/ws_mobile/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake /home/dhanushya/ws_mobile/src/mobile_robot -DCMAKE_INSTALL_PREFIX=/home/dhanushya/ws_mobile/install/mobile_robot
+[0.082s] -- The C compiler identification is GNU 9.4.0
+[0.130s] -- The CXX compiler identification is GNU 9.4.0
+[0.146s] -- Detecting C compiler ABI info
+[0.204s] -- Detecting C compiler ABI info - done
+[0.211s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.212s] -- Detecting C compile features
+[0.212s] -- Detecting C compile features - done
+[0.226s] -- Detecting CXX compiler ABI info
+[0.294s] -- Detecting CXX compiler ABI info - done
+[0.307s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.308s] -- Detecting CXX compile features
+[0.308s] -- Detecting CXX compile features - done
+[0.313s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.317s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.317s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.317s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.317s]   the cmake_policy command to set the policy and suppress this warning.
+[0.317s] 
+[0.317s] Call Stack (most recent call first):
+[0.317s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.317s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.317s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.318s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.318s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.318s]   CMakeLists.txt:16 (find_package)
+[0.318s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.318s] [0m
+[0.338s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.338s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.539s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.615s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.618s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.618s] -- Added test 'lint_cmake' to check CMake code style
+[0.619s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.620s] -- Added test 'xmllint' to check XML markup files
+[0.621s] -- Configuring done (0.6s)
+[0.624s] -- Generating done (0.0s)
+[0.627s] -- Build files have been written to: /home/dhanushya/ws_mobile/build/mobile_robot
+[0.633s] Invoked command in '/home/dhanushya/ws_mobile/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake /home/dhanushya/ws_mobile/src/mobile_robot -DCMAKE_INSTALL_PREFIX=/home/dhanushya/ws_mobile/install/mobile_robot
+[0.636s] Invoking command in '/home/dhanushya/ws_mobile/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake --build /home/dhanushya/ws_mobile/build/mobile_robot -- -j16 -l16
+[0.674s] Invoked command in '/home/dhanushya/ws_mobile/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake --build /home/dhanushya/ws_mobile/build/mobile_robot -- -j16 -l16
+[0.704s] Invoking command in '/home/dhanushya/ws_mobile/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake --install /home/dhanushya/ws_mobile/build/mobile_robot
+[0.729s] -- Install configuration: ""
+[0.729s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/launch
+[0.729s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/launch/apartment.launch.py
+[0.729s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/model
+[0.729s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/model/robot.xacro
+[0.730s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/model/gazebo_model.launch.py
+[0.730s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/parameters
+[0.730s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/parameters/bridge_parameters.yaml
+[0.731s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/gazebo_worlds
+[0.731s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/gazebo_worlds/apartment.world
+[0.731s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/scripts
+[0.731s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/config
+[0.731s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/config/robot.rviz
+[0.732s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
+[0.732s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
+[0.733s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh
+[0.733s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv
+[0.733s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/path.sh
+[0.733s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/environment/path.dsv
+[0.734s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/local_setup.bash
+[0.734s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/local_setup.sh
+[0.735s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/local_setup.zsh
+[0.735s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/local_setup.dsv
+[0.735s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/package.dsv
+[0.736s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot
+[0.736s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake
+[0.736s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake
+[0.737s] -- Installing: /home/dhanushya/ws_mobile/install/mobile_robot/share/mobile_robot/package.xml
+[0.741s] Invoked command in '/home/dhanushya/ws_mobile/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dhanushya/ws_mobile/install/wall_follower_robot:/opt/ros/foxy /home/dhanushya/.local/bin/cmake --install /home/dhanushya/ws_mobile/build/mobile_robot
