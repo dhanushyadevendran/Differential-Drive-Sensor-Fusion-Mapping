@@ -81,8 +81,10 @@ colcon build
 
 # Source the workspace
 source install/setup.bash
-```
+
 ros2 launch mobile_robot gazebo_model.launch.py
+```
+
 
 ### 2. Run Wall-Following Algorithm
 
